@@ -29,11 +29,6 @@
         <img id="w20" src="assets/progress/w20.jpg" />
 
      </a-assets>
-      
-     <a-entity>
-      <a-image position="-10 6 -7" width="4" height="1" src="#moz"></a-image>
-      <a-image position="-10 5 -8" width="8" height="1" src="#project"></a-image>
-     </a-entity>
                  <a-entity>
                 <a-entity camera look-controls wasd-controls>
                     <a-entity position="0 1 -2" scale="0.2 0.2 0.2" geometry="primitive: ring; radiusOuter: 0.20; radiusInner: 0.13;" material="color: #ADD8E6; shader: flat" cursor="maxDistance: 30; fuse: true">
@@ -43,7 +38,39 @@
                 </a-entity>
             </a-entity>
 
-      <a-curvedimage position="2 1.2 -8" width="3" height="5"
+            <a-curvedimage src="#w3" transparent="true" 
+              height="2" radius="3" theta-length="40" rotation="0 250 0" position="0 0 -2">
+            </a-curvedimage>
+
+            <a-curvedimage src="#w5" transparent="true" 
+              height="2" radius="3" theta-length="40" rotation="0 200 0" position="0 0 -2">
+            </a-curvedimage>
+            
+		<a-curvedimage id="ho5" src="#w6" transparent="true" 
+              height="2" radius="3" theta-length="40" rotation="0 150 0" position="0 0 -2">
+            </a-curvedimage>
+
+
+            <a-curvedimage " src="#w7" transparent="true" 
+              height="2" radius="3" theta-length="40" rotation="0  100 0" position="0 0 -2">
+            </a-curvedimage>
+            
+            <a-curvedimage src="#w8" transparent="true" 
+              height="2" radius="3" theta-length="40" rotation="0  50 0" position="0 0 -2">
+            </a-curvedimage>
+
+          <a-light type="directional" color="#fff" intensity="0.2" position="-1 2 1"></a-light>
+          <a-light type="ambient" color="#fff"></a-light>
+          <a-sky color="rgb(200,200,200)" opacity="0.5"></a-sky>
+        </a-scene>
+    </body>
+</html>
+      <!--
+     <a-entity>
+      <a-image position="-10 6 -7" width="4" height="1" src="#moz"></a-image>
+      <a-image position="-10 5 -8" width="8" height="1" src="#project"></a-image>
+     </a-entity>
+                 <a-curvedimage position="2 1.2 -8" width="3" height="5"
              radius="3" theta-length="40" rotation="0 50 0" src="#w5"></a-curvedimage>
       <a-curvedimage position="4 1.2 -8" width="3" height="5"
              radius="3" theta-length="40" rotation="0 100 0" src="#w6"></a-curvedimage>
@@ -66,7 +93,7 @@
 
       
 
-           <a-sky color="#2ff9b3"></a-sky>
+           <a-sky color="#2ff9b3"></a-sky>-->
     </a-scene>
 </bo
 </html>
