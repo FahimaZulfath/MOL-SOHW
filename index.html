@@ -13,10 +13,20 @@
     <a-scene outline>
       <a-assets>
         <img id="groundTexture" src="https://img.gs/bbdkhfbzkk/stretch/https://i.imgur.com/25P1geh.png">
-        <a-asset-item id="optimerBoldFont" src="https://rawgit.com/mrdoob/three.js/dev/examples/fonts/optimer_bold.typeface.json"></a-asset-item>
-        <a-mixin id="boldFont" text="font: #optimerBoldFont"></a-mixin>
+        <img id="mozin" src="mozIN.png" />
+        <img id="moztn" src="moztn.jpg" />
+        <img id="wish" src="wish.png" />
       </a-assets>
-      
+      <a-entity>
+      <a-image position="-10 6 -7" width="4" height="1" src="#moz"></a-image>
+      <a-image position="-10 5 -8" width="8" height="1" src="#project"></a-image>       
+      </a-entity>
+      <a-image src="wish" width="90" height="30" position="-1.55 1.2 -7"
+scale="0.2 0.2 0.2"></a-image>
+      <a-image src="mozTN" width="10" height="10" position="-8 5 -7"
+               scale="0.2 0.2 0.2"></a-image>
+      <a-image src="mozIN" width="10" height="6" position="5 5 -7"
+scale="0.2 0.2 0.2"></a-image>
 
       <a-entity particle-system="preset: snow; particleCount: 10000"></a-entity>
       <a-entity particle-system="preset: default; color: #fdc747; particleCount: 1000" position="-14 0 -10"></a-entity>
