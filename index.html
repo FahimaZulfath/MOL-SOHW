@@ -7,19 +7,24 @@
     <script src="https://unpkg.com/aframe-animation-component@3.2.1/dist/aframe-animation-component.min.js"></script>
     <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
     <script src="https://unpkg.com/aframe-outline@%5E1.1.0/build/aframe-outline.min.js"></script>
+    <script src="https://unpkg.com/aframe-text-geometry-component/dist/aframe-text-geometry-component.min.js"></script> 
   </head>
   <body>
     <a-scene outline>
       <a-assets>
         <img id="groundTexture" src="https://img.gs/bbdkhfbzkk/stretch/https://i.imgur.com/25P1geh.png">
+        <a-asset-item id="optimerBoldFont" src="https://rawgit.com/mrdoob/three.js/dev/examples/fonts/optimer_bold.typeface.json"></a-asset-item>
+        <a-mixin id="boldFont" text="font: #optimerBoldFont"></a-mixin>
       </a-assets>
       
 
       <a-entity particle-system="preset: snow; particleCount: 10000"></a-entity>
       <a-entity particle-system="preset: default; color: #fdc747; particleCount: 1000" position="-14 0 -10"></a-entity>
       <a-entity particle-system="preset: default; color: #a336e1; particleCount: 1000" position="14 0 -10"></a-entity>
-      <a-entity position="-0.5 0.5 -0.5" scale="0.6 1.2 1" text-geometry="value: Women's Day; font: #exoFont; bevelEnabled: true; bevelSize: 0.1; bevelThickness: 0.1; curveSegments: 1; size: 1.5; height: 0.5;" material="color:pink; metalness:0.9; roughness: 0.05; sphericalEnvMap: #chrome;"></a-entity>
-      
+      <a-entity position="-0.5 0.5 -0.5" scale="0.6 1.2 1" text-geometry="value: Women's Day; font: #exoFont; bevelEnabled: true; bevelSize: 0.1; bevelThickness: 0.1; curveSegments: 1; size: 1.5; height: 0.5;" material="color:pink; metalness:0.9; roughness: 0.05; sphericalEnvMap: #chrome;"></a-entity> 
+      <a-entity mixin="boldFont" text-geometry="value: What's up" position="0 0 0.5></a-entity>
+      <a-entity text-geometry="value: Dog?; font: #optimerBoldFont" position="0 0 2"></a-entity>
+ 
 
       <a-entity id="box" geometry="primitive: cone; radius: 1; height: 1" position="-7 0.75 -5" material="color: #23caee"
                 animation="property: scale; dir: alternate; dur: 100; to: 1.1 1.1 1.1; loop: true"></a-entity>
