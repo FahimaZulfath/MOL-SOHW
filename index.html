@@ -17,15 +17,22 @@
         <img id="moztn" src="mozTN.jpg" />
         <img id="wish" src="wish.png" />
       </a-assets>
-      
+      <a-entity>
+      <a-image position="-10 6 -7" width="4" height="1" src="#moz"></a-image>
+      <a-image position="-10 5 -8" width="8" height="1" src="#project"></a-image>       
+      </a-entity>
+      <a-image src="wish.png" width="90" height="30" position="-1.55 1.2 -7"
+scale="0.2 0.2 0.2"></a-image>
+      <a-image src="mozTN.jpg" width="10" height="10" position="-8 5 -7"
+               scale="0.2 0.2 0.2"></a-image>
+      <a-image src="mozIN.png" width="10" height="6" position="5 5 -7"
+scale="0.2 0.2 0.2"></a-image>
+
       
       
       <a-entity particle-system="preset: snow; particleCount: 10000"></a-entity>
       <a-entity particle-system="preset: default; color: #fdc747; particleCount: 1000" position="-14 0 -10"></a-entity>
       <a-entity particle-system="preset: default; color: #a336e1; particleCount: 1000" position="14 0 -10"></a-entity>
-      <a-entity position="-0.5 0.5 -0.5" scale="0.6 1.2 1" text-geometry="value: Women's Day; font: #exoFont; bevelEnabled: true; bevelSize: 0.1; bevelThickness: 0.1; curveSegments: 1; size: 1.5; height: 0.5;" material="color:pink; metalness:0.9; roughness: 0.05; sphericalEnvMap: #chrome;"></a-entity> 
-      <a-entity mixin="boldFont" text-geometry="value: What's up" position="0 0 0.5></a-entity>
-      <a-entity text-geometry="value: Dog?; font: #optimerBoldFont" position="0 0 2"></a-entity>
  
 
       <a-entity id="box" geometry="primitive: cone; radius: 1; height: 1" position="-7 0.75 -5" material="color: #23caee"
